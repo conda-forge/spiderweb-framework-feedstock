@@ -1,5 +1,5 @@
 {% set name = "spiderweb-framework" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spiderweb_framework-{{ version }}.tar.gz
-  sha256: d763eee5b287b9f21a534e81f393669184b4933d9c4ed34566dfe93e93e7fb82
+  sha256: cfe4c2ca6596fc8e231adf9396d33f697699010060a3a2b4d726fbdee2a3c926
 
 build:
   noarch: python
