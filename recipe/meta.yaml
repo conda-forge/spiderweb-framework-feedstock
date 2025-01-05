@@ -1,3 +1,4 @@
+{% set python_min = '3.11.0' %}
 {% set name = "spiderweb-framework" %}
 {% set version = "1.4.0" %}
 
@@ -12,15 +13,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.11,<4.0
-    - poetry-core
+    - python {{ python_min }}
+    - poetry-core <2
     - pip
   run:
-    - python >=3.11.0,<4.0.0
+    - python >={{ python_min }},<4.0.0
     - peewee >=3.17.6,<4.0.0
     - jinja2 >=3.1.4,<4.0.0
     - cryptography >=43.0.0,<44.0.0
@@ -34,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/itsthejoker/spiderweb
