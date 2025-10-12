@@ -1,6 +1,6 @@
-{% set python_min = '3.11.0' %}
+{% set python_min = "3.11.0" %}
 {% set name = "spiderweb-framework" %}
-{% set version = "1.4.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spiderweb_framework-{{ version }}.tar.gz
-  sha256: cfe4c2ca6596fc8e231adf9396d33f697699010060a3a2b4d726fbdee2a3c926
+  sha256: aa894fbb50e10d25d311d5da99cbd9a98fc7643cf216aed5a20c0b6248a7cb5c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
