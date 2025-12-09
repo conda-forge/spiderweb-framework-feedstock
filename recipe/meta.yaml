@@ -1,4 +1,4 @@
-{% set python_min = "3.11.0" %}
+{% set python_min = "3.11" %}
 {% set name = "spiderweb-framework" %}
 {% set version = "2.0.0" %}
 
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - hatchling
+    - poetry-core
     - pip
   run:
     - python >={{ python_min }},<4.0.0
