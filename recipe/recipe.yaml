@@ -26,6 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }},<4.0.0
     - advanced-alchemy >=1.6.3,<2.0.0
+    - alembic >=1.17.0
     - cryptography >=46.0.2
     - email-validator >=2.3.0
     - jinja2 >=3.1.6
