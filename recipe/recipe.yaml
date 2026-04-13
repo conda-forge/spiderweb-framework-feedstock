@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: 3.11.0
   name: spiderweb-framework
-  version: "2.3.0"
+  version: "2.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/spiderweb_framework-${{ version }}.tar.gz
-  sha256: 7a3b41e87172150b6b1833e0f6b46057685a9c95ac629b5d52b2a23e494a99bb
+  sha256: bd2d74caf5c7290fc359d6e402cffad9c7ae8f400a4048b9b1afcf9f5172ba3c
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }},<4.0.0
     - advanced-alchemy >=1.6.3,<2.0.0
+    - alembic >=1.17.0
     - cryptography >=46.0.2
     - email-validator >=2.3.0
     - jinja2 >=3.1.6
