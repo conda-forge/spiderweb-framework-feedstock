@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: 3.11.0
   name: spiderweb-framework
-  version: "2.6.1"
+  version: "2.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/spiderweb_framework-${{ version }}.tar.gz
-  sha256: c78e36df632305616d91b3eaafe82760f9192cc09fbfafad92938d0dc9adee2d
+  sha256: 310afe9e8c9f739997462e9d6bc311ff4e6fa73a21d2f0376b9adb75d1f46c49
 
 build:
   number: 0
